@@ -1,0 +1,86 @@
+.container {
+    display: absolute; /* or inline-flex */
+  }
+ul {
+    list-style-type: none;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+.about-info {
+    color:black ;
+    font-family: sans-serif;
+    font-size: 35px;
+    list-style-type: none;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.player-info {
+    position: relative;
+    float: left;
+    margin: .1%;
+}
+.class p {
+    color: #fff;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    position: relative;
+    width: 100%
+}
+.site-header {
+    flex-wrap: wrap;
+}
+.site-header .main-nav>ul>li>p {
+    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    height: 100%;
+    color: #fff;
+    padding: 21px 1rem 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    padding: .1%;
+}
+#interface-row {
+    width:100%;
+    position: relative;
+}
+#interface-container {
+    width:100%;
+    position: relative;
+}
+.col-2 {
+    position: relative;
+    display: flex;
+}
+.btn btn-primary {
+    position: absolute;
+    display: flex;
+    width: 30%;
+}
