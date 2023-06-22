@@ -211,7 +211,7 @@ function traits_image(name,grid_layout) {
     for (const trait of name) {
         if (trait.tier_current != 0) {
             var traitname = trait.name.replace(/[A-Z&]/g, m => m === "&" ? "-and-" : m.toLowerCase());
-            traitname = traitname.replace('set8_','');
+            traitname = traitname.replace('set9_','');
             const myImage = new Image(25,25);
             myImage.src = `https://cdn.metatft.com/file/metatft/traits/${traitname}.png`;
 
@@ -270,7 +270,7 @@ function champion_image(name,cost,champ) {
     myImage.setAttribute('data-bs-toggle','tooltip');
     myImage.setAttribute('data-bs-placement','top');
     myImage.setAttribute('data-bs-custom-class','custom-tooltip');
-    name = name.replace('tft8_','');
+    name = name.replace('tft9_','');
     myImage.setAttribute('data-bs-title',`${name}`);
     champ.appendChild(myImage);
     champ.style.position = "relative";
@@ -320,7 +320,13 @@ async function take_sid_return_rank(obj) {
     let SN = await response_SN.json();
     for (var i = 0; i < SN.length; i++) {
         if (SN[i].queueType == "RANKED_TFT") {
-            return (SN[i].tier + " " + SN[i].leaguePoints + " lp");
+            tier = SN[i].tier
+            points = SN[i].leaguePoints
+            division = SN[i].rank
+            if (tier == "MASTER" || tier == "GRANDMASTER" || tier == "CHALLENGER") {
+                return (tier + " " + points + " lp");
+            }
+            return (tier + " " + division + " "+ points + " lp");
         }
     }
     return "not ranked";
