@@ -1,0 +1,12 @@
+format for my tft project:
+
+reuse code from my C++ version as I can for the JS version
+
+implement to webpage functionality so user can see stats on board
+
+1. create a list for each player
+2. put champions/traits and their items into the list, attached
+3. option 1: display each units stats on sheet on hover
+3. option 2: open new page on user input to display team, where it is
+easier for players to view each units individual stats.
+
