@@ -5,7 +5,11 @@ Displays information about a players games played in TFT using the Riot Games AP
 If a button is visible but is not listed here it has no current function.
 ### suminfo
 Takes the name entered into the search bar and uses riots API to return useful information, such as current rank.
+<<<<<<< HEAD
 ![Example1](https://github.com/NGoffi/MyTFTProfile/blob/main/ExampleIMG/Suminfoexp.PNG)
+=======
+![Example1](https://github.com/NGoffi/MyTFTProfile/blob/main/Suminfoexp.PNG)
+>>>>>>> 2a569628b67273202c97b858545054968ef46bdd
 
 ### IC
 Returns a list of all "Champions" (anything that can be placed/created on the board or bench falls under this category) from the last few sets of TFT. 
